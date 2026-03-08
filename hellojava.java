@@ -3,6 +3,6 @@ public class hellojava{
         System.out.println("Hello SIESCOMS");
         System.out.println("This is Jenkins Project");
         System.out.println("Addition :"+ (8 + 2));
-        System.out.println("Addition :"+ (3 + 2));
+        System.out.println("Addition :"+ (7 + 2));
     }
 }
