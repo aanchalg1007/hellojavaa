@@ -4,4 +4,20 @@ pipeline{
   stages{
     stage('Checkout'){
       steps{
-        git
+        git 'https://github.com/aanchalg1007/hellojavaa.git'
+      }
+    }
+    stage('Publish'){
+      steps{
+        publishHTML([
+          allowmissing:true,
+          alwaysLinktoLastBuild:false,
+          KeepAll:false,
+          reportDir:'.',
+          reportFiles:'index.html',
+          reportName:'MY HTML PAGE'
+        ])
+      }
+    }
+  }
+}
